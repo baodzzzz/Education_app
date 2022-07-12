@@ -35,7 +35,7 @@ const Section = ({children, title}): Node => {
           styles.sectionTitle,
           {
             color: isDarkMode ? Colors.white : Colors.black,
-            
+
           },
         ]}>
         {title}
@@ -55,7 +55,6 @@ const Section = ({children, title}): Node => {
 
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
-
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
